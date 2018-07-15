@@ -1,0 +1,556 @@
+/*FONTS,GENERAL*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    position: relative;
+    margin: 0;
+    padding-bottom: 200px;
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+@media (max-width: 544px) {
+  h1 {font-size:25px;}
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+@media (max-width: 544px) {
+  h3 {font-size:12px;}
+}
+
+h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 8px;
+}
+
+@media (max-width: 544px) {
+  h5 {font-size:5px;}
+}
+
+/* NAVBAR */
+
+header {
+    margin-bottom: 10%;
+}
+
+.navbar-custom {
+    background-color: #bababa;
+    border: none !important;
+    border-radius: 0px;
+    height: 40px;
+}
+
+.brand-custom {
+    float: left;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+div.brand-custom a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.brand-text {
+    color: gray;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.navbar-text {
+    padding-right: 10px;
+}
+
+.navbar-meni {
+    float: left;
+    padding-bottom: 5px;
+}
+
+.link {
+    color: gray;
+    cursor: pointer;
+}
+
+.naslov a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.podnaslov a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.navbar-footer {
+    height: 100px;
+    border: none !important;
+    border-radius: 0px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    background-color: #efefef;
+}
+
+.navbar-signature {
+    margin-top: 45.5px;
+    color: #a3a3a3;
+    font-size: 9px;
+
+}
+
+.nsmargin {
+    margin-left: 20px;
+}
+
+div.navbar-signature-link a:hover {
+    color: #666666 !important;
+    text-decoration: none;
+}
+
+.icon {
+    margin-top: 35px;
+    margin-right: 50px;
+}
+
+.icon img{
+    height: 30px;
+    width: auto;
+    margin: 5px;
+}
+
+
+
+/*NASLOVNICA*/
+
+.naslovnica {
+    margin-bottom: 0px;
+}
+
+.ena {
+    /*background-color: #79cdcd;*/
+    height: 200px;
+    position: relative;
+}
+
+.ena h3 {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.dva {
+    /*background-color: #006400;*/
+    height: 200px;
+}
+
+.dva img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    padding-bottom: 2px;
+    left: 5px;
+}
+
+.tri {
+    /*background-color: #ff6347;*/
+    height: 200px;
+}
+
+.tri-vrsta {
+    position: absolute;
+    right: 5px;
+    padding-top: 3px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.tri-vrsta h5 {
+    margin: 5px;
+    text-align: right;
+}
+
+.stiri {
+    /*background-color: #fff68f;*/
+    height: 200px;
+}
+
+.stiri h1 {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    border: 0;
+    padding-top: 0px;
+    left: 3px;
+}
+
+/*NASLOV KATEGORIJE*/
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+h2:before, h2:after {
+  background-color: #bababa;
+  content: '\a0';
+  flex-grow: .1;
+  height: 1px;
+  position: relative;
+  top: 0.5em;
+}
+h2:before {
+  margin-right:10px;
+}
+h2:after {
+  margin-left:10px;
+}
+
+.naslov {
+    margin-top: 5%;
+}
+
+/*NASLOV PODKATEGORIJE*/
+
+.podnaslov {
+    margin-top: 5%;
+}
+
+.stevilka {
+    border-bottom: 1px solid #bababa;
+}
+
+/*PORTFOLIO TABLE*/
+
+.portfolio-table {
+    margin-top: 5%;
+}
+
+.portfolio-table .row {
+    margin-top: 1%;
+}
+
+.portfolio-table img {
+    height: 50%;
+    width: 75%;
+    display: block;
+}
+
+.left {
+    position: relative;
+}
+
+.left img {
+    float: right;
+    margin-right: -1.5%;
+}
+
+.right {
+    position: relative;
+}
+
+.right img {
+    float: left;
+    margin-left: -1.5%;
+}
+
+/*HOVER EFFECT LEFT*/
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 72.5%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h3 {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	right: 0;
+	width: 72.5%;
+	color: #484c61;
+	transition: transform 0.35s, color 0.35s;
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	padding: 9%;
+	width: 72.5%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie a {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie a {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	padding: 1em;
+	width: 72.5%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h3 {
+	color: #fff;
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover a {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/*HOVER EFFECT RIGHT*/
+
+figure.effect-sadie-right figcaption::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 72.5%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie-right h3 {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 0;
+	width: 72.5%;
+	color: #484c61;
+	transition: transform 0.35s, color 0.35s;
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie-right figcaption::before,
+figure.effect-sadie-right p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie-right p {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	padding: 9%;
+	width: 72.5%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie-right figcaption::before,
+figure.effect-sadie-right a {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie-right a {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	width: 72.5%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie-right:hover h3 {
+	color: #fff;
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie-right:hover figcaption::before ,
+figure.effect-sadie-right:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sadie-right:hover figcaption::before ,
+figure.effect-sadie-right:hover a {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/* CAROUSEL */
+
+
+/*CV IN REFERENCE TABELA*/
+
+.cv {
+    margin-top: 5%;
+    position: relative;
+}
+
+.cv-prva {
+    height: 200px;
+}
+
+.cv-druga {
+    margin-bottom: 0.3%;
+}
+
+.cv-tretja {
+}
+
+.cv img {
+    height: 140%;
+    width: 140%;
+    margin-left: -15%;
+}
+
+.one {
+    /*background-color: #79cdcd;*/
+    position: relative;
+    height: 200px;
+}
+
+.one h5 {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.two {
+    /*background-color: #006400;*/
+    position: relative;
+    height: 200px;
+}
+
+.pravokotnik {
+    background-color: #bababa;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    left: 1px;
+}
+
+.two h3 {
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.three {
+
+}
+
+.four {
+
+}
+
+.five {
+    /*background-color: #ffea61;*/
+    position: relative;
+}
+
+.five h5 {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.six {
+
+}
+
+.seven {
+
+}
+
+/*KONTAKT*/
+
+.contact {
+    margin-top: 5%;
+    position: relative;
+}
+
+.contact-vrsta {
+    position: absolute;
+    left: 3px;
+    padding-top: 3px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.contact-vrsta h5 {
+    margin: 5px;
+    text-align: left;
+}
+
